@@ -5,16 +5,16 @@
 <struts-config>
 
 	<form-beans>
-		<form-bean name="SR" type="beans.Student"></form-bean>
+		<form-bean name="SR" type="beans.Student"/>
 	</form-beans>
 	
 	<action-mappings>
-		<action path="/reg" name="SR" validate="true" scope="request" input="/index.jsp" type="controller.StudentRegController">
+		<action path="/reg" name="SR" validate="true" scope="session" input="/index.jsp" type="controller.StudentRegController">
 			<forward name="success" path="/success.jsp"/>
 		</action>
 	
 	</action-mappings>
 	
-	<message-resources parameter="resources/Messages"></message-resources>
+	<message-resources parameter="resources/Messages"/>
 
 </struts-config>

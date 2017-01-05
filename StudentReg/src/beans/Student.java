@@ -82,12 +82,24 @@ public class Student extends ActionForm {
 			ae.add("address_e", new ActionMessage("msg4"));
 		if (dob.equals(""))
 			ae.add("dob_e", new ActionMessage("msg5"));
-		if (gender.equals(""))
+		if (gender.equals("") || gender==null)
 			ae.add("gender_e", new ActionMessage("msg6"));
-		if (hobbies.length<1)
-			ae.add("hobby_e", new ActionMessage("msg7"));
+		if (hobbies.length<1 || gender==null)
+			ae.add("hobbies_e", new ActionMessage("msg7"));
 		return ae;
 	}	
 
+	@Override
+	public void reset(ActionMapping mapping, HttpServletRequest request) {
+		id=0;
+		name="John";
+		email="john@gmail.com";
+		address="125, siliconvaley";
+		dob="12/11/91";
+//		gender="Male";
+//		hobbies[0]="Criket";
+//		hobbies[1]="Reading Books";
+				
+	}
 
 }

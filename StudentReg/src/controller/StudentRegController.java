@@ -8,6 +8,7 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
+
 import beans.Student;
 
 public class StudentRegController extends Action {
@@ -21,8 +22,12 @@ public class StudentRegController extends Action {
 		System.out.println(st.getEmail());
 		System.out.println(st.getAddress());
 		System.out.println(st.getGender());
-		System.out.println(st.getHobbies());
+		String[] hob= st.getHobbies();
+		for (int i = 0; i <hob.length ; i++) {
+			System.out.println(hob[i]);	
+		}
 		
+		form.reset(mapping, request);
 		return mapping.findForward("success");
 	}
 }

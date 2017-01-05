@@ -40,12 +40,12 @@
 		</tr>
 		<tr>
 			<td>Hobbies:</td>
-			<td><html:checkbox property="hobbies" value="hobby1"/>Watching Cricket</td>
+			<td><html:checkbox property="hobbies" value="Cricket"/>Watching Cricket</td>
 			<td><html:errors property="hobbies_e"/></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td><html:checkbox property="hobbies" value="hobby2"/>Reading Books</td>
+			<td><html:checkbox property="hobbies" value="Reading Books"/>Reading Books</td>
 			<td></td>
 		</tr>
 		<tr>
