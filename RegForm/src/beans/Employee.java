@@ -12,6 +12,7 @@ public class Employee extends ValidatorForm {
 		return id;
 	}
 	public void setId(int id) {
+		System.out.println("data storing into beans"); //to check the whether server side validation is done.
 		this.id = id;
 	}
 	public long getPhone() {

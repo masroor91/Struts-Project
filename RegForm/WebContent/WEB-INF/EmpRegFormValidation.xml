@@ -41,7 +41,7 @@
 	
 	<formset language="en" country="IN">
 		<form name="RF">
-			<field property="salary" depends="floatrange">
+			<field property="salary" depends="floatRange">
 				<arg key="salary" resource="false"/>
 				<arg key="${var:min}" resource="false"/>
 				<arg key="${var:max}" resource="false"/>
