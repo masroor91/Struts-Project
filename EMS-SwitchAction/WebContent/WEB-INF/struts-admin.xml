@@ -1,0 +1,19 @@
+<!DOCTYPE struts-config PUBLIC
+       "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+       "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+       
+<struts-config>
+	<form-beans>
+		<form-bean name="AF" type="com.ds.ems.admin.beans.AdminUserUpdateForm"/>
+	
+	</form-beans>
+	
+	<action-mappings>
+		<action path="/adminupdate" name="AF" type=""></action>
+	
+	</action-mappings>
+	
+	
+	<message-resources parameter="resources/Messages"/>
+
+</struts-config>

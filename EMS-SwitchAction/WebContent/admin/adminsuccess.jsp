@@ -1,0 +1,1 @@
+Administrator registered successfully
