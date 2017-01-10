@@ -11,10 +11,12 @@
 	<action-mappings>
 		<action path="/login" name="LF" input="/login.jsp" type="com.ds.ems.main.controller.LoginAction">
 			<forward name="samepage" path="/login.jsp"/>
-			<forward name="adminsuccess" path="/admin/adminsuccess.jsp"/>
-			<forward name="employeesuccess" path="/employee/adminsuccess.jsp"/>
-			<forward name="usersuccess" path="/user/adminsuccess.jsp"/>
+			<forward name="adminsuccess" path="/adminsuccess.do?prefix=/admin&amp;page=/adminforward.do"/>
+			<forward name="employeesuccess" path="/employee/employeesuccess.jsp"/>
+			<forward name="usersuccess" path="/user/usersuccess.jsp"/>
 		</action>
+		
+		<action path="/adminsuccess" type="org.apache.struts.actions.SwitchAction"/>
 	
 	</action-mappings>
 	

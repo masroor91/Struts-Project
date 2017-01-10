@@ -1,0 +1,30 @@
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+       "http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+       
+<tiles-definitions>
+	<definition name="welcomehome" path="/template/tilesview.jsp">
+		<put name="menu" value="/views/menu.html"/>
+		<put name="head" value="/views/header.html"/>
+		<put name="body" value="/body/home.html"/>
+		<put name="foot" value="/views/footer.html"/>
+	
+	</definition>
+	
+	<definition name="reg" extends="welcomehome">
+		<put name="body" value="/body/reg.jsp"/>
+	</definition>
+	
+	<definition name="batches" extends="welcomehome">
+		<put name="body" value="/body/batches.html"/>
+	</definition>
+	
+	<definition name="about" extends="welcomehome">
+		<put name="body" value="/body/about.html"/>
+	</definition>
+	
+	<definition name="contact" extends="welcomehome">
+		<put name="body" value="/body/contact.html"/>
+	</definition>
+
+</tiles-definitions>

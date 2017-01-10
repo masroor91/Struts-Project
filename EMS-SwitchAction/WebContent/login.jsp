@@ -14,5 +14,7 @@
 	 		  	  </html:select>
 			<html:submit value="Login"/>
 	</pre>
+	
+	<html:link action="adminforward" module="/admin">Click to Redirect Admin</html:link>
 
 </html:form>

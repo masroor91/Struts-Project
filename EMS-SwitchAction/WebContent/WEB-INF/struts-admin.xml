@@ -9,7 +9,12 @@
 	</form-beans>
 	
 	<action-mappings>
-		<action path="/adminupdate" name="AF" type=""></action>
+	
+		<action path="/adminforward" forward="/adminsuccess.jsp"/>
+		
+		<action path="/adminupdate" name="AF" input="/adminsuccess.jsp" validate="true"></action>
+		
+		
 	
 	</action-mappings>
 	

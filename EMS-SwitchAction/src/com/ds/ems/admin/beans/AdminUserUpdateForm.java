@@ -50,15 +50,15 @@ public class AdminUserUpdateForm extends ActionForm {
 		ActionErrors ae = new ActionErrors();
 		
 		if(oldUsername.equals(""))
-			ae.add("oldUsername", new ActionMessage("msg1"));
+			ae.add("oldUsername", new ActionMessage("oldUser.required"));
 		if(newUsername.equals(""))
-			ae.add("newUsername", new ActionMessage("msg2"));
+			ae.add("newUsername", new ActionMessage("newUser.required"));
 		if(oldPassword.equals(""))
-			ae.add("oldPassword", new ActionMessage("msg3"));
+			ae.add("oldPassword", new ActionMessage("oldPassword.required"));
 		if(newPassword.equals(""))
-			ae.add("newPassword", new ActionMessage("msg4"));
+			ae.add("newPassword", new ActionMessage("newPassword.required"));
 		
-		return super.validate(mapping, request);
+		return ae;
 	}
 
 }

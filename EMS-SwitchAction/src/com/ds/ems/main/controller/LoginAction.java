@@ -40,6 +40,7 @@ public class LoginAction extends Action {
 			ActionMessages am = new ActionMessages();
 			am.add("username", new ActionMessage("msg4"));
 			am.add("password", new ActionMessage("msg5"));
+			addErrors(request, am); //This adding errors after we get errors from database validations
 			af= mapping.findForward("samepage");
 		}
 		
