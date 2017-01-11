@@ -3,11 +3,15 @@
 	"http://struts.apache.org/dtds/struts-2.5.dtd">
 	
 <struts>
-	<constant name="struts.mapper.action.prefix.enabled" value="true" /> <!--In newer versions of struts2 this constant needs to be enable to enable prefix  -->
-	<package name="controller" extends="struts-default">
+	
+<!-- 		In newer versions of struts2 this constant needs to be enable to enable prefix -->
+	<constant name="struts.mapper.action.prefix.enabled" value="true"/>  
+	
+<!-- 	<constant name="devMode" value="true" /> -->
+	<package name="controller" namespace="/" extends="struts-default">
 		<action name="*cal" class="controller.CalController" method="{1}">
-			<result name="input">/index.jsp</result>
-			<result name="success">/success.jsp</result>
+			<result name="input">index.jsp</result>
+			<result name="success">success.jsp</result>
 		</action>
 	
 	</package>

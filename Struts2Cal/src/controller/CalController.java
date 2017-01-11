@@ -1,7 +1,5 @@
 package controller;
 
-import javax.validation.constraints.Min;
-
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.validator.annotations.IntRangeFieldValidator;
 
@@ -55,7 +53,6 @@ public class CalController extends ActionSupport {
 		res=fn/sn;
 		return "success";
 	}
-	
-	
+		
 
 }

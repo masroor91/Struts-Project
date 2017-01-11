@@ -4,7 +4,7 @@
 
 <s:form action="cal">
 	<s:textfield name="name" label="FirstNumber"/> <!-- No need to have errors tag -->
-	<s:textfield name="email" label="FirstNumber"/>
+	<s:textfield name="email" label="SecondNumber"/>
 	<s:submit value="ADD" action="addcal"/>
 	<s:submit value="SUB" action="subcal"/>
 	<s:submit value="MUL" action="mulcal"/>
