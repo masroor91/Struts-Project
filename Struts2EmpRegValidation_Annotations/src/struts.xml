@@ -1,0 +1,20 @@
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+
+	<constant name="struts.custom.i18n.resources" value="resources/Messages"/>
+
+	<package name="controller" extends="struts-default">
+		<action name="reg" class="controller.EmpController">
+			<result name="input">/index.jsp</result>
+			<result name="success">/success.jsp</result>
+		</action>
+	
+	</package>
+
+
+
+
+</struts>

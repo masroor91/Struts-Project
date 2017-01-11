@@ -19,6 +19,10 @@
 		</action>
 		
 		<action path="/reg" name="RF" input="/index.jsp"/>
+		
+		<action path="/changeLang" type="controller.ChangeLanguageController">
+			<forward name="reg" path="reg"/>
+		</action>
 	
 	</action-mappings>
 	
