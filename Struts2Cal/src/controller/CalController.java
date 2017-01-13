@@ -36,21 +36,25 @@ public class CalController extends ActionSupport {
 	
 	public String add() throws Exception {
 		res=fn+sn;
+		System.out.println(res);
 		return "success";
 	}
 	
 	public String sub() throws Exception {
 		res=fn-sn;
+		System.out.println(res);
 		return "success";
 	}
 	
 	public String mul() throws Exception {
 		res=fn*sn;
+		System.out.println(res);
 		return "success";
 	}
 	
 	public String div() throws Exception {
 		res=fn/sn;
+		System.out.println(res);
 		return "success";
 	}
 		

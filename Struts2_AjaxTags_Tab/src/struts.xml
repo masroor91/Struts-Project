@@ -1,0 +1,14 @@
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+<!--	type="tiles" -->
+<!-- 	<package name="controller" extends="struts-default"> -->
+<!-- 		<action name="ajaxdemo" class="controller.AjaxAutoCompleteHelper"> -->
+<!-- 			<interceptor-ref name="loggingStack"></interceptor-ref> -->
+<!-- 			<result name="success" >/autocompleter.jsp</result> -->
+<!--		<result type="tiles">/ajaxdemo.tiles</result> -->
+<!-- 		</action> -->
+<!-- 	</package> -->
+</struts>

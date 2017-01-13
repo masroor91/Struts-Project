@@ -1,3 +1,2 @@
-<pre>
-result=${tn}
-</pre>
+
+result=${res}
